@@ -1,6 +1,6 @@
 import React from "react";
-import { Link, withRouter } from "react-router-dom";
-import "./Nav.css";
+import { NavLink, withRouter } from "react-router-dom";
+import "./Nav.scss";
 
 const Nav = () => {
   return (
@@ -11,22 +11,24 @@ const Nav = () => {
       <div className="menu">
         <ul>
           <li>
-            <Link to="/"> Accueil </Link>
+            <NavLink exact activeClassName="selected" to="/">
+              Accueil
+            </NavLink>
           </li>
-        </ul>
-        <ul>
           <li>
-            <Link to="/info">Info</Link>
+            <NavLink exact activeClassName="selected" to="/info">
+              Info
+            </NavLink>
           </li>
-        </ul>
-        <ul>
           <li>
-            <Link to="/tarif">Tarif</Link>
+            <NavLink exact activeClassName="selected" to="/tarif">
+              Tarif
+            </NavLink>
           </li>
-        </ul>
-        <ul>
           <li>
-            <Link to="/contact">Contact</Link>
+            <NavLink exact activeClassName="selected" to="/contact">
+              Contact
+            </NavLink>
           </li>
         </ul>
       </div>
