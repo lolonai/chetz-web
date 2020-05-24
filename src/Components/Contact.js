@@ -13,7 +13,9 @@ export default function NameForm(props) {
 
   const handleSubmit = (evt) => {
     evt.preventDefault();
-    alert(`Message envoyé, nous vous recontacterons à cet adressse: ${email}`);
+    alert(
+      `Message envoyé, nous vous recontacterons à cette adressse: ${email}`
+    );
     let templateParams = {
       expediteur: email,
       to_name: process.env.REACT_APP_EMAILJS_DESTINATAIRE_KEY,
