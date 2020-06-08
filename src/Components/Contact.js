@@ -1,65 +1,90 @@
 import React from "react";
-import { useInput } from "./Hooks/input-hook";
+import { useForm } from "react-hook-form";
 import * as emailjs from "emailjs-com";
 
-export default function NameForm(props) {
-  const { value: sujet, bind: bindSujet, reset: resetSujet } = useInput("");
-  const { value: prenom, bind: bindPrenom, reset: resetPrenom } = useInput("");
-  const { value: nom, bind: bindNom, reset: resetNom } = useInput("");
-  const { value: email, bind: bindEmail, reset: resetEmail } = useInput("");
-  const { value: message, bind: bindMessage, reset: resetMessage } = useInput(
-    ""
-  );
+export default function NameForm() {
+  const { register, handleSubmit, errors } = useForm();
 
-  const handleSubmit = (evt) => {
-    evt.preventDefault();
-    alert(
-      `Message envoyé, nous vous recontacterons à cette adressse: ${email}`
-    );
+  const onSubmit = (data, e) => {
+    e.target.reset();
+    alert(`Message envoyé, nous vous recontacterons au plus vite`);
     let templateParams = {
-      expediteur: email,
-      to_name: process.env.REACT_APP_EMAILJS_DESTINATAIRE_KEY,
-      prenom: prenom,
-      nom: nom,
-      sujet: sujet,
-      message: message,
+      expediteur: data.email,
+      to_name: process.env.REACT_APP_DESTINATAIRE,
+      prenom: data.prenom,
+      nom: data.nom,
+      sujet: data.sujet,
+      message: data.message,
     };
     emailjs.send(
-      process.env.REACT_APP_EMAILJS_1,
-      process.env.REACT_APP_EMAILJS_2,
+      process.env.REACT_APP_SERVICE,
+      process.env.REACT_APP_TEMPLATE,
       templateParams,
-      process.env.REACT_APP_EMAILJS_USER
+      process.env.REACT_APP_USER
     );
-    resetSujet();
-    resetPrenom();
-    resetNom();
-    resetEmail();
-    resetMessage();
+  };
+
+  const intialValues = {
+    prenom: "",
+    nom: "",
+    email: "",
+    sujet: "",
+    message: "",
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <label>
-        Prénom:
-        <input type="text" {...bindPrenom} />
-      </label>
-      <label>
-        Nom:
-        <input type="text" {...bindNom} />
-      </label>
-      <label>
-        email:
-        <input type="text" {...bindEmail} />
-      </label>
-      <label>
-        Sujet:
-        <input type="text" {...bindSujet} />
-      </label>
-      <label>
-        Message:
-        <textarea type="text" {...bindMessage} />
-      </label>
-      <input type="submit" value="Submit" />
+    <form onSubmit={handleSubmit(onSubmit)}>
+      <label>Prénom:</label>
+      <input
+        defaultValue={intialValues.prenom}
+        name="prenom"
+        ref={register({ required: true })}
+      />
+      {errors.prenom && <p>Veuillez remplir ce champ</p>}
+      <label>Nom:</label>
+      <input
+        defaultValue={intialValues.nom}
+        name="nom"
+        ref={register({ required: true })}
+      />
+      {errors.nom && <p>Veuillez remplir ce champ</p>}
+      <label>email:</label>
+      <input
+        defaultValue={intialValues.email}
+        name="email"
+        ref={register({
+          required: true,
+          pattern: {
+            value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i,
+          },
+        })}
+      />
+      {errors.email && errors.email.type === "required" && (
+        <p>Veuillez remplir ce champ</p>
+      )}
+      {errors.email && errors.email.type === "pattern" && (
+        <p>Veuillez entrer une adresse email valide</p>
+      )}
+      <label>Sujet:</label>
+      <input
+        defaultValue={intialValues.sujet}
+        name="sujet"
+        ref={register({ required: true })}
+      />
+      {errors.sujet && <p>Veuillez remplir ce champ</p>}
+      <label>Message:</label>
+      <textarea
+        defaultValue={intialValues.message}
+        name="message"
+        ref={register({ required: true, minLength: 20 })}
+      />
+      {errors.message && errors.message.type === "required" && (
+        <p>Veuillez remplir ce champ</p>
+      )}
+      {errors.message && errors.message.type === "minLength" && (
+        <p>Minimum 20 caractères</p>
+      )}
+      <input type="submit" />
     </form>
   );
 }
