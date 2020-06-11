@@ -1,3 +1,5 @@
+@import "Styles/styles.scss";
+
 *,
 ::before,
 ::after {
@@ -6,12 +8,14 @@
   padding: 0;
 }
 
-@import "Styles/styles.scss";
+html {
+  font-size: 10px;
+}
 
-body {
-  margin: 0;
-  width: 100%;
+.app-container {
+  background: url("https://images.pexels.com/photos/1260612/pexels-photo-1260612.jpeg?cs=srgb&dl=apple-arriere-plan-jaune-brillant-concept-1260612.jpg&fm=jpg");
+  background-size: cover;
   height: 100vh;
-  background-color: rgb(255, 255, 255);
+  width: 100%;
   font-family: "Lato", sans-serif;
 }
