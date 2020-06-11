@@ -5,7 +5,7 @@ const Nav = () => {
   return (
     <nav>
       <div className="title">
-        <h1>CheTz Web</h1>
+        <h3>CheTz Web</h3>
       </div>
       <div className="menu">
         <ul>
