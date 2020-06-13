@@ -10,10 +10,11 @@
 
 html {
   font-size: 10px;
+  text-shadow: 0 0 0 !important;
 }
 
 .app-container {
-  background: url("https://images.pexels.com/photos/1260612/pexels-photo-1260612.jpeg?cs=srgb&dl=apple-arriere-plan-jaune-brillant-concept-1260612.jpg&fm=jpg");
+  background-color: #fff;
   background-size: cover;
   height: 100vh;
   width: 100%;

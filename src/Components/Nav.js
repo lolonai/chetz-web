@@ -5,7 +5,7 @@ const Nav = () => {
   return (
     <nav>
       <div className="title">
-        <h3>CheTz Web</h3>
+        <img src="CHETZ.svg" alt="THE_CHETZ_WEB" />
       </div>
       <div className="menu">
         <ul>
