@@ -1,0 +1,24 @@
+.sidenav {
+  display: flex;
+  flex-direction: column;
+  height: 0;
+  width: 25vw;
+  position: fixed;
+  z-index: 1;
+  bottom: 0;
+  right: 12vw;
+  background-color: $pink;
+  opacity: 0.8;
+  overflow-x: hidden;
+  transition: 0.7s ease-in-out;
+  .menuTop {
+    height: 10rem;
+    i {
+      font-size: 3rem;
+      color: $gold;
+    }
+  }
+  .menuBottom {
+    height: 100%;
+  }
+}

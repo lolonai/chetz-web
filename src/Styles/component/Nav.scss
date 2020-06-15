@@ -1,0 +1,45 @@
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 10rem;
+  background-color: $dark;
+  border-bottom: solid 1px $pink;
+  box-shadow: inset 0 -11px 10px -15px $pink;
+
+  .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10rem;
+    width: 28rem;
+    position: relative;
+    transition: transform 0.3s ease;
+    transform: translateX(0px);
+    img {
+      width: 22rem;
+      cursor: pointer;
+    }
+  }
+  .title:hover {
+    transform: translateX(-10px);
+  }
+
+  .grid {
+    i {
+      font-size: 2.5rem;
+      color: $gold;
+      cursor: pointer;
+      transition: 0.3s ease;
+      &:hover {
+        color: $pink;
+      }
+    }
+    .roll-out-bottom {
+      color: $gold;
+      -webkit-animation: roll-out-bottom 0.6s ease-in both;
+      animation: roll-out-bottom 0.6s ease-in both;
+    }
+  }
+}

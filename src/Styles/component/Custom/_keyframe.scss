@@ -1,0 +1,29 @@
+/**
+ * ----------------------------------------
+ * animation roll-out-bottom
+ * ----------------------------------------
+ */
+@-webkit-keyframes roll-out-bottom {
+  0% {
+    -webkit-transform: translateY(0) rotate(0deg);
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(800px) rotate(540deg);
+    transform: translateY(800px) rotate(540deg);
+    opacity: 0;
+  }
+}
+@keyframes roll-out-bottom {
+  0% {
+    -webkit-transform: translateY(0) rotate(0deg);
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(800px) rotate(540deg);
+    transform: translateY(800px) rotate(540deg);
+    opacity: 0;
+  }
+}

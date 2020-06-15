@@ -1,0 +1,22 @@
+@import "Styles/styles.scss";
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+  text-shadow: 0 0 0 !important;
+}
+
+.app-container {
+  background-color: #fff;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  font-family: "Lato", sans-serif;
+}
