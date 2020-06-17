@@ -1,4 +1,15 @@
+// plus de 768 width
+@media all and (min-width: 768px) {
+  .sidenav {
+    display: none;
+  }
+}
+
+// moins de 768 width
 @media all and (max-width: 768px) {
+  .sidenav {
+    display: block;
+  }
   nav {
     justify-content: space-between;
     height: 8rem;
