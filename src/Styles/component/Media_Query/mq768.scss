@@ -1,0 +1,41 @@
+@media all and (max-width: 768px) {
+  nav {
+    justify-content: space-between;
+    height: 8rem;
+    .title {
+      width: auto;
+      img {
+        margin-left: 3rem;
+        width: 16rem;
+      }
+    }
+    .grid {
+      position: relative;
+      margin-right: 4rem;
+      transition: transform 0.5s ease;
+      &:hover {
+        transform: rotate(8deg);
+      }
+      i {
+        font-size: 2.5rem;
+        color: $gold;
+        cursor: pointer;
+        transition: 0.3s ease;
+        &:hover {
+          color: $pink;
+        }
+      }
+      .roll-out-bottom {
+        color: $gold;
+        -webkit-animation: roll-out-bottom 0.3s ease-in both;
+        animation: roll-out-bottom 0.3s ease-in both;
+      }
+      #menuBtn {
+        display: block;
+      }
+      .menu {
+        display: none;
+      }
+    }
+  }
+}

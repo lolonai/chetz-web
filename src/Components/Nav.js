@@ -1,29 +1,44 @@
 import React from "react";
 
-import Sidenav from "./Sidenav";
+import Menu from "../Containers/Menu";
 
 const Nav = () => {
   const openNav = () => {
     const sidenav = document.querySelector("#sidenav");
     const menuBtn = document.querySelector("#menuBtn");
 
+    menuBtn.style.transform = "rotate(0deg)";
     menuBtn.classList.add("roll-out-bottom");
 
     function openSideNav() {
       sidenav.style.height = "100%";
     }
-    setTimeout(openSideNav, 500);
+    setTimeout(openSideNav, 300);
+  };
+
+  const closeNav = () => {
+    const sidenav = document.querySelector("#sidenav");
+    const menuBtn = document.querySelector("#menuBtn");
+
+    menuBtn.classList.remove("roll-out-bottom");
+    sidenav.style.height = "0";
   };
 
   return (
     <React.Fragment>
-      <Sidenav />
+      <div id="sidenav" className="sidenav">
+        <div onClick={closeNav} className="menuTop triangle">
+          <i class="fas fa-times"></i>
+        </div>
+        <Menu />
+      </div>
       <nav>
         <div className="title">
           <img src="CHETZ.svg" alt="THE_CHETZ_WEB" />
         </div>
         <div className="grid">
-          <i onClick={openNav} id="menuBtn" class="fas fa-bars "></i>
+          <Menu />
+          <i onClick={openNav} id="menuBtn" class="fas fa-bars"></i>
         </div>
       </nav>
     </React.Fragment>
