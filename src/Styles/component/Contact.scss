@@ -1,0 +1,192 @@
+.contact-container {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(#141e30, #243b55);
+  width: 100vw;
+
+  .inline-input {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .login-box {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    width: 50vw;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+
+    p {
+      margin: 0 0 30px;
+      padding: 0;
+      color: #fff;
+      text-align: center;
+      font-size: 2rem;
+    }
+
+    .user-box {
+      position: relative;
+
+      input {
+        width: 100%;
+        padding: 10px 0;
+        font-size: 16px;
+        color: #fff;
+        margin-bottom: 30px;
+        border: none;
+        border-bottom: 1px solid #fff;
+        outline: none;
+        background: transparent;
+        transition: 0.5s;
+
+        &:focus {
+          border-color: $gold;
+        }
+
+        &:focus ~ label,
+        &:not(:placeholder-shown) ~ label {
+          top: -20px;
+          left: 0;
+          color: $gold;
+          font-size: 12px;
+        }
+      }
+
+      label {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 10px 0;
+        font-size: 16px;
+        color: #fff;
+        pointer-events: none;
+        transition: 0.5s;
+      }
+    }
+
+    .w100 {
+      position: relative;
+      width: 85%;
+    }
+
+    .use-box {
+      position: relative;
+      width: 85%;
+
+      &:focus-within label {
+        color: $gold;
+      }
+
+      textarea {
+        width: 100%;
+        padding: 10px 0;
+        font-size: 16px;
+        color: #fff;
+        margin-bottom: 30px;
+        border: none;
+        border-bottom: 1px solid #fff;
+        outline: none;
+        background: transparent;
+        transition: 0.5s;
+
+        &:focus {
+          border-color: $gold;
+        }
+      }
+
+      label {
+        padding: 10px 0;
+        font-size: 16px;
+        color: #fff;
+        pointer-events: none;
+        transition: 0.5s;
+      }
+    }
+
+    .submitFlex {
+      display: flex;
+      justify-content: center;
+    }
+
+    a {
+      position: relative;
+      display: inline-block;
+      padding: 10px 20px;
+      color: $gold;
+      font-size: 16px;
+      text-decoration: none;
+      text-transform: uppercase;
+      overflow: hidden;
+      transition: 0.5s;
+      margin-top: 40px;
+      letter-spacing: 4px;
+
+      &:hover {
+        background: $gold;
+        color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 5px $gold, 0 0 25px $gold, 0 0 50px $gold,
+          0 0 100px $gold;
+
+        button {
+          background: none;
+        }
+      }
+
+      span {
+        position: absolute;
+        display: block;
+
+        &:nth-child(1) {
+          top: 0;
+          left: -100%;
+          width: 100%;
+          height: 2px;
+          background: linear-gradient(90deg, transparent, $gold);
+          animation: btn-anim1 1s linear infinite;
+        }
+
+        &:nth-child(2) {
+          top: -100%;
+          right: 0;
+          width: 2px;
+          height: 100%;
+          background: linear-gradient(180deg, transparent, $gold);
+          animation: btn-anim2 1s linear infinite;
+          animation-delay: 0.25s;
+        }
+
+        &:nth-child(3) {
+          bottom: 0;
+          right: -100%;
+          width: 100%;
+          height: 2px;
+          background: linear-gradient(270deg, transparent, $gold);
+          animation: btn-anim3 1s linear infinite;
+          animation-delay: 0.5s;
+        }
+
+        &:nth-child(4) {
+          bottom: -100%;
+          left: 0;
+          width: 2px;
+          height: 100%;
+          background: linear-gradient(360deg, transparent, $gold);
+          animation: btn-anim4 1s linear infinite;
+          animation-delay: 0.75s;
+        }
+      }
+
+      button {
+        background-color: transparent;
+        border: 0;
+        color: #fff;
+      }
+    }
+  }
+}

@@ -28,7 +28,7 @@ const Nav = () => {
     <React.Fragment>
       <div id="sidenav" className="sidenav">
         <div onClick={closeNav} className="menuTop triangle">
-          <i class="fas fa-times"></i>
+          <i className="fas fa-times"></i>
         </div>
         <Menu />
       </div>
@@ -38,7 +38,7 @@ const Nav = () => {
         </div>
         <div className="grid">
           <Menu />
-          <i onClick={openNav} id="menuBtn" class="fas fa-bars"></i>
+          <i onClick={openNav} id="menuBtn" className="fas fa-bars"></i>
         </div>
       </nav>
     </React.Fragment>
