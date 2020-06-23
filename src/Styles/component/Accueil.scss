@@ -1,0 +1,69 @@
+.home-container {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 10rem;
+  width: 100%;
+  height: 80vh;
+  background: rgb(199, 15, 228);
+  background: linear-gradient(
+    75deg,
+    rgba(199, 15, 228, 1) 0%,
+    rgba(255, 201, 72, 1) 100%
+  );
+  .card-home {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+    height: 50vh;
+    .card-title {
+      text-align: left;
+      p {
+        color: #fff;
+        font-size: 4.8rem;
+        font-weight: bold;
+        letter-spacing: 0.2rem;
+        margin: 0 0 3.3rem;
+      }
+      h6 {
+        color: #fff;
+        font-family: Heebo;
+        font-size: 2rem;
+        letter-spacing: 0.1rem;
+        margin: 0 0 3.5rem;
+      }
+      .contact-btn-home {
+        width: 100%;
+        height: 7rem;
+        button {
+          cursor: pointer;
+          background-color: transparent;
+          box-shadow: rgba(35, 24, 36, 0.1) 0px 3px 5px 2px;
+          padding: 2rem 1rem;
+          font-size: 2rem;
+          font-weight: bold;
+          border: solid 0.2rem #fff;
+          border-radius: 3.2rem;
+          color: #fff;
+          transition: 0.5s;
+          &:hover {
+            background: $gold;
+            box-shadow: 0 0 5px $gold, 0 0 25px $gold, 0 0 50px $gold,
+              0 0 100px $gold;
+            border: none;
+          }
+        }
+      }
+    }
+    .card-illustration {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        width: 30rem;
+      }
+    }
+  }
+}

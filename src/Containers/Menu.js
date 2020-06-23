@@ -14,12 +14,7 @@ function Menu() {
     <div className="menu">
       <ul>
         <li className="text-pop-up-tl">
-          <NavLink
-            onClick={closeNav}
-            exact
-            activeClassName="selected"
-            to="/accueil"
-          >
+          <NavLink onClick={closeNav} exact activeClassName="selected" to="/">
             Accueil
           </NavLink>
         </li>

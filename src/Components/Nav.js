@@ -34,7 +34,7 @@ const Nav = () => {
       </div>
       <nav>
         <div className="title">
-          <img src="CHETZ.svg" alt="THE_CHETZ_WEB" />
+          <img src="./images/CHETZ.svg" alt="THE_CHETZ_WEB" />
         </div>
         <div className="grid">
           <Menu />
