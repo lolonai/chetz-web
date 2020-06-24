@@ -3,8 +3,11 @@ import ContactForm from "../Containers/Form";
 
 export default function Contacts() {
   return (
-    <React.Fragment>
+    <div className="contact-container">
+      <h6>
+        Besoin d'information, d'un devis ou même d'une pomme de pin ? <br />{" "}
+      </h6>
       <ContactForm />
-    </React.Fragment>
+    </div>
   );
 }
