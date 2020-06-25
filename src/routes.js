@@ -2,15 +2,15 @@ import React from "react";
 import { Switch, Route } from "react-router-dom";
 
 import Accueil from "./Components/Accueil";
-import Tarif from "./Components/Tarif";
-import Info from "./Components/Info";
+import Services from "./Components/Services";
+import Presentation from "./Components/Presentation";
 import Contact from "./Components/Contact";
 
 const Routes = () => (
   <Switch>
     <Route exact path="/" component={Accueil} />
-    <Route path="/tarif" component={Tarif} />
-    <Route path="/info" component={Info} />
+    <Route path="/services" component={Services} />
+    <Route path="/présentation" component={Presentation} />
     <Route path="/contact" component={Contact} />
   </Switch>
 );

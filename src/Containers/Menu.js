@@ -23,9 +23,9 @@ function Menu() {
             onClick={closeNav}
             exact
             activeClassName="selected"
-            to="/info"
+            to="/présentation"
           >
-            Info
+            Présentation
           </NavLink>
         </li>
         <li className="text-pop-up-tl">
@@ -33,9 +33,9 @@ function Menu() {
             onClick={closeNav}
             exact
             activeClassName="selected"
-            to="/tarif"
+            to="/services"
           >
-            Tarif
+            Services
           </NavLink>
         </li>
         <li className="text-pop-up-tl">
