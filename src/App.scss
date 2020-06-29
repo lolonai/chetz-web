@@ -14,6 +14,14 @@ html {
   font-family: "Lato", sans-serif;
 }
 
+.clean-transition * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  -ms-transition: none !important;
+  transition: none !important;
+}
+
 a {
   text-decoration: none;
 }

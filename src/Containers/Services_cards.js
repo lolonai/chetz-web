@@ -6,36 +6,36 @@ export default function ServicesCards() {
       <div className="services-cards">
         <div className="services-card roll-in-left-1">
           <div className="services-card-title">
-            <h6>Creation site vitrine</h6>
+            <h6>Site vitrine</h6>
           </div>
           <div className="services-card-content">
             <p>
-              Présentez votre activité en ligne. Nous réalisons l’intégralité
-              des fonctionnalités pour vous !
+              Une opportunitée de présenter votre activité sur la toile. Nous
+              réalisons l’intégralité des fonctionnalités pour vous !
             </p>
           </div>
         </div>
         <div className="services-card roll-in-left-2">
           <div className="services-card-title">
-            <h6>Creation site e-commerce</h6>
+            <h6>Création e-commerce</h6>
           </div>
           <div className="services-card-content">
             <p>
-              Creation clés en mains de votre site E-commerce, conseil,
-              hébergement, charte graphique, paiement, livraison… Votre
-              stratégie E-commerce n’a jamais été aussi efficace.
+              Création clés en mains de votre site E-commerce, conseil,
+              paiement, livraison... Nous développons avec vous votre plateforme
+              de vente en ligne.
             </p>
           </div>
         </div>
         <div className="services-card roll-in-left-3">
           <div className="services-card-title">
-            <h6>Creation site sur-mesure</h6>
+            <h6>Application sur-mesure</h6>
           </div>
           <div className="services-card-content">
             <p>
-              Nous développons des solutions sur-mesure pour répondre exactement
-              à vos attentes. Rapidité, efficacité et sécurité : vous avez tout
-              à y gagner.
+              Un projet plus complexe ? Une solution sur-mesure pour répondre
+              exactement à vos attentes. Nous développons pour vous un outil à
+              votre image.
             </p>
           </div>
         </div>
@@ -45,9 +45,8 @@ export default function ServicesCards() {
           </div>
           <div className="services-card-content">
             <p>
-              Amoureux du papier, nous gérons l'impression de vos supports de A
-              à Z : choix des options, recommandations de finitions, façonnage,
-              livraison.
+              Fiers de nos 15 ans d'expérience, nous gérons vos impressions et
+              vous orientons vers les meilleurs choix
             </p>
           </div>
         </div>
