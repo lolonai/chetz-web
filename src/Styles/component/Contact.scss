@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  top: 8rem;
+  top: 10rem;
   background: linear-gradient(
     75deg,
     rgba(199, 15, 228, 1) 0%,
@@ -117,6 +117,8 @@
       outline: none;
       background: transparent;
       transition: 0.5s;
+      resize: none;
+
 
       &:focus {
         border-color: $gold;
