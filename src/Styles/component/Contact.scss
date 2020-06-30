@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  top: 10rem;
+  top: 8rem;
   background: linear-gradient(
     75deg,
     rgba(199, 15, 228, 1) 0%,
@@ -213,5 +213,35 @@
       border: 0;
       color: #fff;
     }
+  }
+}
+
+
+@media all and (max-width: 1248px) {
+  .contact-container {
+
+    .login-box {
+      width: 85vw;
+
+      .inline-input {
+        display: block;
+      }
+
+      .w100 {
+        position: relative;
+        width: 100%;
+      }
+
+      .use-box {
+        position: relative;
+        width: 100%;
+      }
+
+    }
+    h6 {
+      font-size: 3rem;
+    }
+
+
   }
 }
