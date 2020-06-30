@@ -1,17 +1,27 @@
 @media all and (max-width: 1024px) {
-  .title-container {
-    .card-home {
-      .card-title {
-        p {
-          font-size: 3.8rem;
+  .home-container {
+    .title-container {
+      .card-home {
+        width: 720px;
+        .card-title {
+          p {
+            font-size: 3.2rem;
+          }
+          h6 {
+            font-size: 1.6rem;
+          }
+          .contact-btn-home {
+            width: 100%;
+            height: 7rem;
+            button {
+              font-size: 1.6rem;
+            }
+          }
         }
-        h6 {
-          font-size: 1.6rem;
-        }
-      }
-      .card-illustration {
-        img {
-          width: 25rem;
+        .card-illustration {
+          img {
+            width: 25rem;
+          }
         }
       }
     }

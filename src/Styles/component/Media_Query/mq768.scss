@@ -5,8 +5,6 @@
   }
 }
 
-
-
 // moins de 768 width
 @media all and (max-width: 768px) {
   .sidenav {
@@ -55,10 +53,23 @@
   // accueil
   .title-container {
     top: 8rem;
+    .card-home {
+      flex-direction: column;
+      align-items: center;
+      .card-title {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+      .contact-btn-home {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
   }
 
   .contact-container {
-
     .login-box {
       width: 85vw;
 
@@ -75,12 +86,9 @@
         position: relative;
         width: 100%;
       }
-
     }
     h6 {
       font-size: 3rem;
     }
-
-
   }
 }
