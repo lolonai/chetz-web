@@ -65,6 +65,7 @@
       li {
         padding: 6px 0;
         text-align: center;
+
         a {
           position: relative;
           display: block;
@@ -73,20 +74,27 @@
           font-size: 3rem;
           font-family: Lato, sans-serif;
           color: $light-dark;
-          background: rgba(199, 15, 228, 0.8);
-          -webkit-box-shadow: 2px 2px 50px -5px $pink;
-          box-shadow: 2px 2px 50px -5px $pink;
+          // background: rgba(199, 15, 228, 0.8);
+          // -webkit-box-shadow: 2px 2px 50px -5px $pink;
+          box-shadow: 2px 2px 20px -5px $pink;
 
           border-radius: 0.5rem;
           text-decoration: none;
           text-transform: uppercase;
           transition: transform 0.7s ease;
           transform: translate(0px, 0px);
+          &:hover {
+            background: $gold;
+            box-shadow: 0 0 5px $gold, 0 0 25px $gold, 0 0 50px $gold,
+              0 0 100px $gold;
+            border: none;
+            color: white;
+          }
         }
         .selected {
-          background: rgba(199, 15, 228, 0.8);
-          -webkit-box-shadow: 2px 2px 20px -5px $gold;
-          box-shadow: 2px 2px 20px -5px $gold;
+          // background: rgba(199, 15, 228, 0.8);
+          // -webkit-box-shadow: 2px 2px 20px -5px $gold;
+          box-shadow: 2px 2px 30px -2px $gold;
         }
       }
     }
