@@ -64,7 +64,8 @@
       width: 100%;
       li {
         padding: 6px 0;
-        text-align: center;
+        text-align: left;
+
         a {
           position: relative;
           display: block;
@@ -73,20 +74,19 @@
           font-size: 3rem;
           font-family: Lato, sans-serif;
           color: $light-dark;
-          background: rgba(199, 15, 228, 0.8);
-          -webkit-box-shadow: 2px 2px 50px -5px $pink;
-          box-shadow: 2px 2px 50px -5px $pink;
-
+          box-shadow: 0 5px 5px -5px $pink;
           border-radius: 0.5rem;
           text-decoration: none;
-          text-transform: uppercase;
           transition: transform 0.7s ease;
-          transform: translate(0px, 0px);
+          &:hover {
+            box-shadow: 0 5px 5px -5px $gold;
+            border: none;
+            color: #fff;
+          }
         }
         .selected {
-          background: rgba(199, 15, 228, 0.8);
-          -webkit-box-shadow: 2px 2px 20px -5px $gold;
-          box-shadow: 2px 2px 20px -5px $gold;
+          box-shadow: 0 5px 5px -5px $gold;
+          color: #fff;
         }
       }
     }

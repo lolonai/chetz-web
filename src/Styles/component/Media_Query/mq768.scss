@@ -7,6 +7,7 @@
 
 // moins de 768 width
 @media all and (max-width: 768px) {
+  // Navigation
   .sidenav {
     display: block;
   }
@@ -50,7 +51,7 @@
     }
   }
 
-  // accueil
+  // accueil titre
   .title-container {
     top: 8rem;
     .card-home {
@@ -69,7 +70,10 @@
     }
   }
 
+  // formulaire de contact
   .contact-container {
+    top: 8rem;
+
     .login-box {
       width: 85vw;
 

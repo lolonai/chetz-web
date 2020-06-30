@@ -15,12 +15,10 @@
   height: 40vh;
   width: 100vw;
   .services-cards {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 8rem 5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem 18rem;
     margin: -8rem 0;
-    max-width: 1400px;
     & .services-card:nth-child(-n + 2) {
       border-color: $gold;
     }
@@ -44,11 +42,10 @@
       background-color: #e5e5e5;
       border: 2px solid $pink;
       border-radius: 2.4rem;
-      flex: 2;
       padding: 2rem;
       margin: 2rem 2rem;
-      width: 32rem;
-      height: 25rem;
+      width: 30rem;
+      height: 28rem;
       box-shadow: rgba(35, 24, 36, 0.1) 0px 3px 5px 2px;
       .services-card-title {
         h6 {
