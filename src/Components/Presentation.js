@@ -20,7 +20,7 @@ export default function Presentation() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i class="fab fa-linkedin"></i>
+                  <i className="fab fa-linkedin"></i>
                 </a>
               </div>
             </div>
@@ -41,7 +41,7 @@ export default function Presentation() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i class="fab fa-linkedin"></i>
+                  <i className="fab fa-linkedin"></i>
                 </a>
               </div>
             </div>
