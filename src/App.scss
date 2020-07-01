@@ -8,18 +8,14 @@
   padding: 0;
 }
 
+html.sr .load-hidden {
+  visibility: hidden;
+}
+
 html {
   font-size: 10px;
   text-shadow: 0 0 0 !important;
   font-family: "Lato", sans-serif;
-}
-
-.clean-transition * {
-  -webkit-transition: none !important;
-  -moz-transition: none !important;
-  -o-transition: none !important;
-  -ms-transition: none !important;
-  transition: none !important;
 }
 
 a {

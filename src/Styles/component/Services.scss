@@ -22,22 +22,6 @@
     & .services-card:nth-child(-n + 2) {
       border-color: $gold;
     }
-    .roll-in-left-1 {
-      -webkit-animation: roll-in-left 0.6s ease-out 2s both;
-      animation: roll-in-left 0.6s ease-out 3.3s both;
-    }
-    .roll-in-left-2 {
-      -webkit-animation: roll-in-left 0.6s ease-out 2s both;
-      animation: roll-in-left 0.6s ease-out 2.9s both;
-    }
-    .roll-in-left-3 {
-      -webkit-animation: roll-in-left 0.6s ease-out 2s both;
-      animation: roll-in-left 0.6s ease-out 2.6s both;
-    }
-    .roll-in-left-4 {
-      -webkit-animation: roll-in-left 0.6s ease-out 2s both;
-      animation: roll-in-left 0.6s ease-out 2.2s both;
-    }
     .services-card {
       background-color: #e5e5e5;
       border: 2px solid $pink;
