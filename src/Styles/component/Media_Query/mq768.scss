@@ -5,10 +5,9 @@
   }
 }
 
-
-
 // moins de 768 width
 @media all and (max-width: 768px) {
+  // Navigation
   .sidenav {
     display: block;
   }
@@ -52,11 +51,26 @@
     }
   }
 
-  // accueil
+  // accueil titre
   .title-container {
     top: 8rem;
+    .card-home {
+      flex-direction: column;
+      align-items: center;
+      .card-title {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+      .contact-btn-home {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
   }
 
+  // formulaire de contact
   .contact-container {
     top: 8rem;
 
@@ -76,12 +90,9 @@
         position: relative;
         width: 100%;
       }
-
     }
     h6 {
       font-size: 3rem;
     }
-
-
   }
 }

@@ -4,7 +4,7 @@ export default function ServicesCards() {
   return (
     <div className="cards-container">
       <div className="services-cards">
-        <div className="services-card roll-in-left-1">
+        <div className="services-card slide-up-interval load-hidden">
           <div className="services-card-title">
             <h6>Site vitrine</h6>
           </div>
@@ -15,7 +15,7 @@ export default function ServicesCards() {
             </p>
           </div>
         </div>
-        <div className="services-card roll-in-left-2">
+        <div className="services-card slide-up-interval load-hidden">
           <div className="services-card-title">
             <h6>Création e-commerce</h6>
           </div>
@@ -27,7 +27,7 @@ export default function ServicesCards() {
             </p>
           </div>
         </div>
-        <div className="services-card roll-in-left-3">
+        <div className="services-card slide-up-interval load-hidden">
           <div className="services-card-title">
             <h6>Application sur-mesure</h6>
           </div>
@@ -39,7 +39,7 @@ export default function ServicesCards() {
             </p>
           </div>
         </div>
-        <div className="services-card roll-in-left-4">
+        <div className="services-card slide-up-interval load-hidden">
           <div className="services-card-title">
             <h6>Impression</h6>
           </div>
