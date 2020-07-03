@@ -95,4 +95,31 @@
       font-size: 3rem;
     }
   }
+
+  // cards services
+  .services-container {
+    width: 100%;
+  }
+  .cards-container {
+    height: 98rem;
+    .services-cards {
+      grid-template-columns: repeat(1, 1fr);
+      margin: 0rem 0;
+      .services-card {
+        width: 28rem;
+        height: auto;
+        padding: 2rem;
+        .services-card-title {
+          h6 {
+            font-size: 1.8rem;
+          }
+        }
+        .services-card-content {
+          p {
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+  }
 }

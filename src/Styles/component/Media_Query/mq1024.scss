@@ -27,4 +27,30 @@
       }
     }
   }
+
+  .services-container {
+    width: 100%;
+  }
+  .cards-container {
+    height: 48vh;
+    .services-cards {
+      grid-gap: 1rem 10rem;
+      .services-card {
+        width: 28rem;
+        height: auto;
+        margin: 2rem 0rem;
+        padding: 2rem;
+        .services-card-title {
+          h6 {
+            font-size: 2rem;
+          }
+        }
+        .services-card-content {
+          p {
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+  }
 }
