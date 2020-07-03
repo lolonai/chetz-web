@@ -12,13 +12,14 @@
   display: flex;
   justify-content: center;
   background: #e5e5e5;
-  height: 40vh;
+  height: 80vh;
   width: 100vw;
   .services-cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 1rem 18rem;
-    margin: -8rem 0;
+    grid-gap: 1rem 14rem;
+    margin: -6rem 0;
+    height: 0;
     & .services-card:nth-child(-n + 2) {
       border-color: $gold;
     }
