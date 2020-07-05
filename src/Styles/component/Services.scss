@@ -11,9 +11,11 @@
 .cards-container {
   display: flex;
   justify-content: center;
-  background: #e5e5e5;
-  height: 80vh;
+  background: no-repeat url("/images/bg-web-spider.jpg");
+  background-size: cover;
+  height: 72rem;
   width: 100vw;
+  max-width: 100%;
   .services-cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -29,7 +31,7 @@
       border-radius: 2.4rem;
       padding: 2rem;
       margin: 2rem 2rem;
-      width: 30rem;
+      width: 32rem;
       height: 28rem;
       box-shadow: rgba(35, 24, 36, 0.1) 0px 3px 5px 2px;
       .services-card-title {

@@ -5,11 +5,7 @@
   flex-direction: column;
   align-items: center;
   top: 10rem;
-  background: linear-gradient(
-    75deg,
-    rgba(199, 15, 228, 1) 0%,
-    rgba(255, 201, 72, 1) 100%
-  );
+  background: $mid-dark;
   width: 100%;
   height: 100vh;
   overflow: hidden;

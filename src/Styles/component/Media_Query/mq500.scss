@@ -43,4 +43,32 @@
       }
     }
   }
+
+  // presentation
+  .presentation-container {
+    .team-container {
+      width: 30rem;
+      h6 {
+      }
+      .team-cards {
+        .team-card {
+          width: 30rem;
+          .team-title {
+            height: 16rem;
+            width: 16rem;
+            div {
+              height: 16rem;
+              width: 16rem;
+            }
+          }
+          .team-content {
+            width: 24rem;
+            p {
+              font-size: 1.4rem;
+            }
+          }
+        }
+      }
+    }
+  }
 }

@@ -32,7 +32,7 @@
     width: 100%;
   }
   .cards-container {
-    height: 48vh;
+    height: 50rem;
     .services-cards {
       grid-gap: 1rem 10rem;
       .services-card {
@@ -48,6 +48,33 @@
         .services-card-content {
           p {
             font-size: 1.2rem;
+          }
+        }
+      }
+    }
+  }
+
+  // presentation
+  .presentation-container {
+    .team-container {
+      width: 88vw;
+      h6 {
+      }
+      .team-cards {
+        .team-card {
+          height: 36rem;
+          .team-title {
+            height: 20rem;
+            width: 20rem;
+            div {
+              height: 20rem;
+              width: 20rem;
+            }
+          }
+          .team-content {
+            width: 28rem;
+            p {
+            }
           }
         }
       }
