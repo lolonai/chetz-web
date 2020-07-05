@@ -122,4 +122,37 @@
       }
     }
   }
+
+  // presentation
+  .presentation-container {
+    height: 112rem;
+    .team-container {
+      height: 88rem;
+      width: 48rem;
+      h6 {
+      }
+      .team-cards {
+        flex-direction: column;
+        height: 72rem;
+        .team-card {
+          height: 36rem;
+          width: 48rem;
+          margin-top: 8rem;
+          .team-title {
+            height: 20rem;
+            width: 20rem;
+            div {
+              height: 20rem;
+              width: 20rem;
+            }
+          }
+          .team-content {
+            width: 46rem;
+            p {
+            }
+          }
+        }
+      }
+    }
+  }
 }
