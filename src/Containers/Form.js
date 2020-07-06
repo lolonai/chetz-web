@@ -27,28 +27,30 @@ export default function ContactForm() {
   const intialValues = {
     prenom: "",
     nom: "",
+    societe: "",
     email: "",
     sujet: "",
+    telephone: "",
     message: "",
   };
 
   return (
     <div className="login-box">
-      <h6>
-        Contactez nous:
-      </h6>
+      <h6>Contactez nous:</h6>
       <form onSubmit={handleSubmit(onSubmit)}>
-        <div className="inline-input">
+        <div className="solo-input">
           <div className="user-box">
             <input
               placeholder=" "
-              defaultValue={intialValues.prenom}
-              name="prenom"
-              ref={register({ required: true })}
+              defaultValue={intialValues.sujet}
+              name="sujet"
+              ref={register({ required: true, maxLength: 70 })}
             />
-            {errors.prenom && <p>Veuillez remplir ce champ</p>}
-            <label>Prénom:</label>
+            {errors.sujet && <p>Veuillez remplir ce champ</p>}
+            <label>Sujet:</label>
           </div>
+        </div>
+        <div className="duo-input">
           <div className="user-box">
             <input
               placeholder=" "
@@ -59,9 +61,19 @@ export default function ContactForm() {
             {errors.nom && <p>Veuillez remplir ce champ</p>}
             <label>Nom:</label>
           </div>
+          <div className="user-box">
+            <input
+              placeholder=" "
+              defaultValue={intialValues.prenom}
+              name="prenom"
+              ref={register({ required: true })}
+            />
+            {errors.prenom && <p>Veuillez remplir ce champ</p>}
+            <label>Prénom:</label>
+          </div>
         </div>
-        <div className="inline-input">
-          <div className="user-box w100">
+        <div className="duo-input">
+          <div className="user-box">
             <input
               placeholder=" "
               defaultValue={intialValues.email}
@@ -81,20 +93,28 @@ export default function ContactForm() {
             )}
             <label>email:</label>
           </div>
-        </div>
-        <div className="inline-input">
-          <div className="user-box w100">
+          <div className="user-box">
             <input
               placeholder=" "
               defaultValue={intialValues.sujet}
-              name="sujet"
-              ref={register({ required: true, maxLength: 70 })}
+              name="telephone"
+              ref={register({ required: true, maxLength: 17 })}
             />
             {errors.sujet && <p>Veuillez remplir ce champ</p>}
-            <label>Sujet:</label>
+            <label>Téléphone:</label>
           </div>
         </div>
-        <div className="inline-input textBox">
+        <div className="solo-input">
+          <div className="user-box">
+            <input
+              placeholder=" "
+              defaultValue={intialValues.nom}
+              name="societe"
+            />
+            <label>Societe:</label>
+          </div>
+        </div>
+        <div className="message-input textBox">
           <div className="use-box">
             <label>Message:</label>
             <textarea
