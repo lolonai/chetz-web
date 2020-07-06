@@ -155,4 +155,26 @@
       }
     }
   }
+
+  // formulaire contact
+
+  .login-box {
+    width: 46rem;
+    form {
+      width: 44rem;
+      .solo-input {
+        width: 22rem;
+      }
+      .duo-input {
+        width: 44rem;
+      }
+
+      message-input {
+        width: 44rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
 }

@@ -71,4 +71,34 @@
       }
     }
   }
+
+  // page du formulaire
+  .contact-container {
+    height: 120rem;
+
+    h6 {
+      font-size: 2.4rem;
+    }
+  }
+
+  // formulaire contact
+
+  .login-box {
+    width: 80vw;
+    form {
+      width: 22rem;
+      .solo-input {
+        width: 22rem;
+      }
+      .duo-input {
+        display: flex;
+        flex-direction: column;
+        width: 22rem;
+      }
+
+      message-input {
+        width: 22rem;
+      }
+    }
+  }
 }
