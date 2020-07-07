@@ -6,6 +6,7 @@ export default function ContactForm() {
   const { register, handleSubmit, errors } = useForm();
 
   const onSubmit = (data, e) => {
+    e.preventDefault();
     e.target.reset();
     alert(`Message envoyé, nous vous recontacterons au plus vite`);
     let templateParams = {
@@ -15,6 +16,8 @@ export default function ContactForm() {
       nom: data.nom,
       sujet: data.sujet,
       message: data.message,
+      telephone: data.telephone,
+      societe: data.societe,
     };
     emailjs.send(
       process.env.REACT_APP_SERVICE,
@@ -25,12 +28,12 @@ export default function ContactForm() {
   };
 
   const intialValues = {
-    prenom: "",
-    nom: "",
-    societe: "",
-    email: "",
     sujet: "",
+    nom: "",
+    prenom: "",
+    email: "",
     telephone: "",
+    societe: "",
     message: "",
   };
 
@@ -96,11 +99,16 @@ export default function ContactForm() {
           <div className="user-box">
             <input
               placeholder=" "
-              defaultValue={intialValues.sujet}
+              defaultValue={intialValues.telephone}
               name="telephone"
               ref={register({ required: true, maxLength: 17 })}
             />
-            {errors.sujet && <p>Veuillez remplir ce champ</p>}
+            {errors.telephone && errors.telephone.type === "required" && (
+              <p>Veuillez remplir ce champ</p>
+            )}
+            {errors.telephone && errors.telephone.type === "maxLength" && (
+              <p>Max 17 caractères</p>
+            )}
             <label>Téléphone:</label>
           </div>
         </div>
@@ -108,9 +116,13 @@ export default function ContactForm() {
           <div className="user-box">
             <input
               placeholder=" "
-              defaultValue={intialValues.nom}
+              defaultValue={intialValues.societe}
               name="societe"
+              ref={register({ required: false, maxLength: 35 })}
             />
+            {errors.societe && errors.societe.type === "maxLength" && (
+              <p>Max 35 caractères</p>
+            )}
             <label>Societe:</label>
           </div>
         </div>

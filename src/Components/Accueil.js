@@ -12,7 +12,7 @@ import AnimationScroll from "../Custom/scrollReveal";
 function Accueil() {
   useEffect(() => {
     AnimationScroll();
-  });
+  }, []);
   return (
     <div className="home-container">
       <div className="title-container">
