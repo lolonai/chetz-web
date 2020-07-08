@@ -1,13 +1,16 @@
+// page services cards =>
 .services-container {
   position: absolute;
+  top: 10rem;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
-  top: 10rem;
-  overflow: hidden;
   width: 100%;
+  height: 100vh;
 }
+
+// bloc de services cards =>
 .cards-container {
   display: flex;
   justify-content: center;
@@ -22,8 +25,21 @@
     grid-gap: 1rem 14rem;
     margin: -6rem 0;
     height: 0;
-    & .services-card:nth-child(-n + 2) {
-      border-color: $gold;
+
+    .services-card:hover {
+      border: 2px solid $dark;
+      background-color: $green;
+      box-shadow: 0 0 5px $dark, 0 0 25px $dark;
+      .services-card-title {
+        i {
+          color: #e5e5e5;
+        }
+      }
+      .services-card-content {
+        p {
+          color: #e5e5e5;
+        }
+      }
     }
     .services-card {
       background-color: #e5e5e5;
@@ -34,14 +50,24 @@
       width: 32rem;
       height: 28rem;
       box-shadow: rgba(35, 24, 36, 0.1) 0px 3px 5px 2px;
+      transition: 0.5s ease;
       .services-card-title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         h6 {
           font-size: 2.4rem;
           font-weight: 800;
-          letter-spacing: 0.1rem;
-          margin: 0 0 4rem;
           color: $dark;
           text-align: center;
+          margin: 0 0 2rem;
+          transition: 0.5s ease;
+        }
+        i {
+          font-size: 3.2rem;
+          color: $green;
+          margin: 0 0 2rem;
+          transition: 0.5s ease;
         }
       }
       .services-card-content {
@@ -51,6 +77,7 @@
           font-family: Heebo, sans-serif;
           color: $mid-dark;
           text-align: left;
+          transition: 0.5s ease;
         }
       }
     }
