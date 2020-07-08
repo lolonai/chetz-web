@@ -1,4 +1,4 @@
-// page services cards =>
+// page route services cards =>
 .services-container {
   position: absolute;
   top: 10rem;
@@ -7,7 +7,70 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 100vh;
+  height: 128rem;
+  background: no-repeat url("/images/bg-web-spider.jpg");
+  background-size: cover;
+  .services-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    .services-presentation {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: space-evenly;
+      width: 112rem;
+      height: 112rem;
+      margin: 8rem 0 4rem 0;
+      h5 {
+        font-size: 3.2rem;
+        font-weight: 800;
+        letter-spacing: 0.2rem;
+        text-align: center;
+        color: #fff;
+      }
+      .services-items {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        background: rgba(217, 42, 240, 0.5);
+
+        box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+        border-radius: 10px;
+        .services-item-title {
+          width: 48rem;
+          margin: 4.8rem 0;
+
+          h6 {
+            font-size: 2.4rem;
+            font-weight: 800;
+            color: #fff;
+            text-align: center;
+            margin: 0 0 2rem;
+            text-transform: uppercase;
+          }
+          p {
+            font-size: 1.6rem;
+            letter-spacing: 0.1rem;
+            font-family: Heebo, sans-serif;
+            color: #fff;
+            text-align: left;
+          }
+        }
+        .services-item-desc {
+          p {
+            font-size: 1.2rem;
+            letter-spacing: 0.1rem;
+            font-family: Heebo, sans-serif;
+            color: #fff;
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
 }
 
 // bloc de services cards =>
@@ -32,6 +95,12 @@
       box-shadow: 0 0 5px $dark, 0 0 25px $dark;
       .services-card-title {
         i {
+          transform: translateY(-10px);
+          font-size: 4rem;
+          color: $gold;
+          margin: 0 0 2rem;
+        }
+        h6 {
           color: #e5e5e5;
         }
       }
