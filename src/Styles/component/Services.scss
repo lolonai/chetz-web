@@ -1,13 +1,135 @@
+// page route services cards =>
 .services-container {
   position: absolute;
+  top: 10rem;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
-  top: 10rem;
-  overflow: hidden;
   width: 100%;
+  background: no-repeat
+    url("https://images.pexels.com/photos/3609112/pexels-photo-3609112.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-size: cover;
+  .services-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    .services-presentation {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: space-evenly;
+      width: 112rem;
+      height: 170rem;
+      margin: 8rem 0 4rem 0;
+      h5 {
+        font-size: 3.2rem;
+        font-weight: 800;
+        letter-spacing: 0.2rem;
+        text-align: center;
+        background: rgba(133, 133, 133, 0.1);
+        text-shadow: 2px 1px 0 #e5e5e5;
+        width: 112rem;
+        color: $dark;
+        padding: 2rem;
+        border-radius: 0.5rem;
+      }
+      .services-items {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 32rem;
+        background-color: #e5e5e5;
+        border: 2px solid #c70fe4;
+        border-radius: 2.4rem;
+
+        .services-item-title {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-evenly;
+          margin-left: 4rem;
+          padding-right: 4rem;
+          border-right: 2px dashed $blue;
+          width: 48rem;
+          height: 100%;
+          i {
+            font-size: 5.6rem;
+            color: $blue;
+            text-shadow: 2px 2px 2px $mid-dark;
+          }
+
+          h6 {
+            font-size: 2.4rem;
+            font-weight: 800;
+            color: $dark;
+            text-align: center;
+            text-transform: uppercase;
+          }
+          p {
+            font-size: 1.6rem;
+            letter-spacing: 0.1rem;
+            color: $mid-dark;
+            text-align: left;
+          }
+        }
+        .services-item-desc {
+          display: flex;
+          align-items: center;
+          .item-desc {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            margin-right: 4rem;
+            width: 48rem;
+            height: 24rem;
+            line-height: 3.2rem;
+            p {
+              font-size: 1.4rem;
+              letter-spacing: 0.1rem;
+              line-height: 2.4rem;
+              color: $mid-dark;
+            }
+            .services-support {
+              color: $blue;
+            }
+            .mobile-item {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 48rem;
+              margin-top: 4rem;
+              .mobile-friendly {
+                display: flex;
+                align-items: center;
+                flex-direction: row-reverse;
+                width: 16rem;
+                p {
+                  margin: 0 1rem;
+                  font-size: 1.2rem;
+                  font-weight: bold;
+                  letter-spacing: 0.1rem;
+                  line-height: 1.6rem;
+                  font-family: Heebo, sans-serif;
+                  color: $mid-dark;
+                }
+                i {
+                  font-size: 4.8rem;
+                  color: $blue;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
+
+// bloc de services cards =>
 .cards-container {
   display: flex;
   justify-content: center;
@@ -22,8 +144,9 @@
     grid-gap: 1rem 14rem;
     margin: -6rem 0;
     height: 0;
-    & .services-card:nth-child(-n + 2) {
-      border-color: $gold;
+
+    .services-card:hover {
+      box-shadow: 0 0 5px $dark, 0 0 25px $dark;
     }
     .services-card {
       background-color: #e5e5e5;
@@ -34,14 +157,25 @@
       width: 32rem;
       height: 28rem;
       box-shadow: rgba(35, 24, 36, 0.1) 0px 3px 5px 2px;
+      transition: 0.5s ease;
       .services-card-title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         h6 {
           font-size: 2.4rem;
           font-weight: 800;
-          letter-spacing: 0.1rem;
-          margin: 0 0 4rem;
           color: $dark;
           text-align: center;
+          margin: 0 0 2rem;
+          transition: 0.5s ease;
+        }
+        i {
+          font-size: 3.2rem;
+          color: $blue;
+          text-shadow: 2px 2px 2px $mid-dark;
+          margin: 0 0 2rem;
+          transition: 0.5s ease;
         }
       }
       .services-card-content {
@@ -51,6 +185,7 @@
           font-family: Heebo, sans-serif;
           color: $mid-dark;
           text-align: left;
+          transition: 0.5s ease;
         }
       }
     }
