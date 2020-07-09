@@ -11,58 +11,111 @@ export default function Services() {
       <div className="services-header">
         <div className="services-presentation">
           <h5>
-            Besoin d’un site vitrine ou e-Commerce ? <br /> d'un modèle, du
+            Besoin d’un site vitrine ou e-Commerce ? <br /> D'un modèle ? de
             sur-mesure ?
           </h5>
-          <div className="services-items">
+          <div className="services-items slide-left-interval">
             <div className="services-item-title">
+              <i class="fas fa-glass-martini-alt"></i>
               <h6>Site vitrine</h6>
               <p>
-                Idéal pour présenter votre activité et trouver de nouveaux
-                clients via le Web.
+                C'est le site idéal pour présenter votre activité et trouver de
+                nouveaux clients via le Web. Simple et efficace
               </p>
             </div>
             <div className="services-item-desc">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <div className="item-desc">
+                <p>- Pages de contenu fixe</p>
+                <p>
+                  - design personnalisé aux couleurs d'un logo existant ou à
+                  créer.
+                </p>
+                <p>- Formulaire de contact</p>
+                <p className="services-support">
+                  - Support / maintenance: offerts les 2 premières heures
+                </p>
+
+                <div className="mobile-item">
+                  <div className="mobile-friendly">
+                    <p>Site compatible tablette et mobile</p>
+                    <i class="fas fa-mobile-alt"></i>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div className="services-items">
+          <div className="services-items slide-right-interval">
             <div className="services-item-title">
+              <i class="fas fa-store"></i>
               <h6>e-commerce</h6>
-              <p>
-                Le site idéal pour faire de la vente en ligne et booster votre
-                entreprise.
-              </p>
+              <p>Lancez votre boutique en ligne et booster votre entreprise.</p>
             </div>
             <div className="services-item-desc">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <div className="item-desc">
+                <p>- Gestion de produits simplifier</p>
+                <p>- Création, modification et suppression de produits</p>
+                <p>- Système de paiement en ligne</p>
+                <p>- Gestion du stock</p>
+                <p>
+                  - Donnez-nous vos spécifications techniques et nous adaptons
+                  l'outil à votre système d'information.
+                </p>
+                <p className="services-support">
+                  - Support / maintenance: offerts les 4 premières heures
+                </p>
+                <p className="services-support">
+                  - Formation sur l'utilisation (environ 1H)
+                </p>
+                <div className="mobile-item">
+                  <div className="mobile-friendly">
+                    <p>Site compatible tablette et mobile</p>
+                    <i class="fas fa-mobile-alt"></i>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div className="services-items">
+          <div className="services-items slide-left-interval">
             <div className="services-item-title">
+              <i class="fas fa-drafting-compass"></i>
               <h6>Administratif ou Sur-mesure</h6>
               <p>
-                Gérez votre site web comme votre boutique ou votre entreprise.
-                Vous modifiez et gérez vos contenus à votre guise. Un projet
-                plus complexe ? Une solution sur-mesure pour répondre exactement
-                à vos attentes. Nous développons pour vous un outil à votre
-                image.
+                Gérez vous même votre site web. <br /> Un projet plus complexe ?
+                Une solution sur-mesure pour répondre exactement à vos attentes.
               </p>
             </div>
             <div className="services-item-desc">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <div className="item-desc">
+                <p>- Possibilité de créer des pages et modifier leur contenu</p>
+                <p>- Administration d'articles</p>
+                <p className="services-support">
+                  - Support / maintenance: offerts les 2 premières heures
+                </p>
+                <p className="services-support">
+                  - Formation sur l'utilisation (environ 1H)
+                </p>
+                <div className="mobile-item">
+                  <div className="mobile-friendly">
+                    <p>Site compatible tablette et mobile</p>
+                    <i class="fas fa-mobile-alt"></i>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div className="services-items">
+          <div className="services-items slide-right-interval">
             <div className="services-item-title">
+              <i class="fas fa-paper-plane"></i>
               <h6>Impression</h6>
               <p>
-                Fiers de nos 15 ans d'expérience, nous gérons vos impressions et
-                vous orientons vers les meilleurs choix
+                Flyer, dépliants, carte de visite..., nous gérons vos
+                impressions et vous orientons vers les meilleurs choix
               </p>
             </div>
             <div className="services-item-desc">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <div className="item-desc">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
             </div>
           </div>
         </div>
