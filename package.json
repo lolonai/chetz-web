@@ -19,7 +19,7 @@
     "scrollreveal": "^4.0.6"
   },
   "scripts": {
-    "start": "node server",
+    "start": "react-scripts start",
     "start:dev": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

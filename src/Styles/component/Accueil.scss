@@ -36,7 +36,6 @@
         }
         h6 {
           color: #fff;
-          font-family: Heebo, sans-serif;
           font-size: 1.6rem;
           font-weight: 300;
           letter-spacing: 0.1rem;
@@ -48,14 +47,16 @@
           button {
             cursor: pointer;
             background-color: transparent;
-            box-shadow: rgba(35, 24, 36, 0.1) 0px 3px 5px 2px;
             margin: 0 0 0 4rem;
             padding: 2rem 1rem;
+            font-family: "Lato", sans-serif;
             font-size: 1.6rem;
-            font-weight: bold;
+            letter-spacing: 1px;
+            font-weight: 400;
+            color: #fff;
             border: solid 0.2rem #fff;
             border-radius: 3.2rem;
-            color: #fff;
+            box-shadow: rgba(35, 24, 36, 0.1) 0px 3px 5px 2px;
             transition: 0.5s;
             &:hover {
               background: $gold;
