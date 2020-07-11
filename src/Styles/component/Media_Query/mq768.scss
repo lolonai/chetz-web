@@ -125,17 +125,18 @@
 
   // presentation
   .presentation-container {
-    height: 112rem;
+    height: 128rem;
     .team-container {
-      height: 88rem;
+      justify-content: flex-start;
+      height: 100rem;
       width: 48rem;
       h6 {
+        margin-bottom: 4rem;
       }
       .team-cards {
         flex-direction: column;
         height: 72rem;
         .team-card {
-          height: 36rem;
           width: 48rem;
           margin-top: 8rem;
           .team-title {
