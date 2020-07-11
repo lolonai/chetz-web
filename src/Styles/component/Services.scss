@@ -41,6 +41,10 @@
         font-size: 1.2rem;
         font-family: Heebo, sans-serif;
         letter-spacing: 0.1rem;
+        span {
+          font-weight: bold;
+          color: $alert;
+        }
       }
       .services-items {
         display: flex;

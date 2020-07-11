@@ -1,7 +1,8 @@
 import React, { useEffect } from "react";
 import AnimationScroll from "../Custom/scrollReveal";
+import { NavLink, withRouter } from "react-router-dom";
 
-export default function Services() {
+function Services() {
   useEffect(() => {
     AnimationScroll();
   }, []);
@@ -15,9 +16,14 @@ export default function Services() {
           </h5>
           <p>
             Pour toute information complémentaire, devis, ou prise de contact
-            veuillez vous référer au formulaire. <br />
+            veuillez vous référer au{" "}
+            <NavLink exact activeClassName="selected" to="/contact">
+              <span>formulaire.</span>
+            </NavLink>{" "}
+            <br />
             nous vous recontacterons dans les plus bref délais.
           </p>
+
           <div className="services-items slide-left-interval">
             <div className="services-item-title">
               <i class="fas fa-glass-martini-alt"></i>
@@ -129,3 +135,5 @@ export default function Services() {
     </div>
   );
 }
+
+export default withRouter(Services);

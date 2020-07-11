@@ -23,7 +23,6 @@
       color: #fff;
     }
     .team-cards {
-      height: 40vh;
       display: flex;
       align-items: center;
       justify-content: space-around;
@@ -43,8 +42,8 @@
         }
 
         .team-title {
-          height: 28rem;
-          width: 28rem;
+          height: 26rem;
+          width: 26rem;
 
           background-size: cover;
           border-radius: 50%;
@@ -59,8 +58,8 @@
           }
           div {
             display: none;
-            height: 28rem;
-            width: 28rem;
+            height: 26rem;
+            width: 26rem;
             flex-direction: column;
             justify-content: center;
             align-items: center;
