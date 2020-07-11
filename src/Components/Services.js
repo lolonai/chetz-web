@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import ServicesCards from "../Containers/Services_cards";
 import AnimationScroll from "../Custom/scrollReveal";
 
 export default function Services() {
@@ -14,6 +13,11 @@ export default function Services() {
             Besoin d’un site vitrine ou e-Commerce ? <br /> D'un modèle ? de
             sur-mesure ?
           </h5>
+          <p>
+            Pour toute information complémentaire, devis, ou prise de contact
+            veuillez vous référer au formulaire. <br />
+            nous vous recontacterons dans les plus bref délais.
+          </p>
           <div className="services-items slide-left-interval">
             <div className="services-item-title">
               <i class="fas fa-glass-martini-alt"></i>
@@ -114,7 +118,9 @@ export default function Services() {
             </div>
             <div className="services-item-desc">
               <div className="item-desc">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>- Prise en charge de vos imprimés</p>
+                <p>- Création logo, flyers, carte de visite, ...</p>
+                <p>- Impression, façonnage, livraison</p>
               </div>
             </div>
           </div>
