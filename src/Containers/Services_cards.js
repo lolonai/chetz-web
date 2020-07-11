@@ -8,7 +8,7 @@ function ServicesCards() {
         <NavLink exact to="/services">
           <div className="services-card slide-up-interval load-hidden">
             <div className="services-card-title">
-              <i class="fas fa-glass-martini-alt"></i>
+              <i className="fas fa-glass-martini-alt"></i>
               <h6>Site vitrine</h6>
             </div>
             <div className="services-card-content">
@@ -22,7 +22,7 @@ function ServicesCards() {
         <NavLink exact to="/services">
           <div className="services-card slide-up-interval load-hidden">
             <div className="services-card-title">
-              <i class="fas fa-store"></i>
+              <i className="fas fa-store"></i>
               <h6>Création e-commerce</h6>
             </div>
             <div className="services-card-content">
@@ -37,7 +37,7 @@ function ServicesCards() {
         <NavLink exact to="/services">
           <div className="services-card slide-up-interval load-hidden">
             <div className="services-card-title">
-              <i class="fas fa-drafting-compass"></i>
+              <i className="fas fa-drafting-compass"></i>
               <h6>Application sur-mesure</h6>
             </div>
             <div className="services-card-content">
@@ -52,7 +52,7 @@ function ServicesCards() {
         <NavLink exact to="/services">
           <div className="services-card slide-up-interval load-hidden">
             <div className="services-card-title">
-              <i class="fas fa-paper-plane"></i>
+              <i className="fas fa-paper-plane"></i>
               <h6>Impression</h6>
             </div>
             <div className="services-card-content">

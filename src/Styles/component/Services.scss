@@ -21,8 +21,8 @@
       flex-direction: column;
       justify-content: space-evenly;
       width: 112rem;
-      height: 170rem;
-      margin: 8rem 0 4rem 0;
+      height: 168rem;
+      margin: 8rem 0 16rem 0;
       h5 {
         font-size: 3.2rem;
         font-weight: 800;
@@ -35,6 +35,13 @@
         padding: 2rem;
         border-radius: 0.5rem;
       }
+      p {
+        text-align: center;
+        color: $alert;
+        font-size: 1.2rem;
+        font-family: Heebo, sans-serif;
+        letter-spacing: 0.1rem;
+      }
       .services-items {
         display: flex;
         align-items: center;
@@ -42,8 +49,8 @@
         width: 100%;
         height: 32rem;
         background-color: #e5e5e5;
-        border: 2px solid #c70fe4;
-        border-radius: 2.4rem;
+        border: 1px solid $mid-dark;
+        border-radius: 1rem;
 
         .services-item-title {
           display: flex;
@@ -91,6 +98,7 @@
               font-size: 1.4rem;
               letter-spacing: 0.1rem;
               line-height: 2.4rem;
+              text-align: left;
               color: $mid-dark;
             }
             .services-support {
@@ -144,20 +152,23 @@
     grid-gap: 1rem 14rem;
     margin: -6rem 0;
     height: 0;
-
-    .services-card:hover {
-      box-shadow: 0 0 5px $dark, 0 0 25px $dark;
+    a {
+      cursor: pointer;
     }
+
     .services-card {
       background-color: #e5e5e5;
       border: 2px solid $pink;
-      border-radius: 2.4rem;
+      border-radius: 1rem;
       padding: 2rem;
       margin: 2rem 2rem;
       width: 32rem;
       height: 28rem;
       box-shadow: rgba(35, 24, 36, 0.1) 0px 3px 5px 2px;
       transition: 0.5s ease;
+      &:hover {
+        box-shadow: 0 0 5px $dark, 0 0 25px $dark;
+      }
       .services-card-title {
         display: flex;
         flex-direction: column;
