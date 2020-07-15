@@ -157,6 +157,69 @@
     }
   }
 
+  // page route services cards =>
+  .services-container {
+    top: 8rem;
+    .services-header {
+      .services-presentation {
+        width: 80%;
+        h5 {
+          font-size: 2.4rem;
+        }
+        p {
+          span {
+          }
+        }
+        .services-items {
+          flex-direction: column;
+          width: 42rem;
+          height: 68rem;
+          .bg-title-4 {
+          }
+
+          .services-item-title {
+            width: 100%;
+            height: 32rem;
+            border-bottom-left-radius: 0;
+            border-top-right-radius: 2.5rem;
+
+            .services-icon {
+              top: 27rem;
+              left: 17rem;
+            }
+            .services-title {
+              h6 {
+              }
+              p {
+              }
+            }
+          }
+          .services-item-desc {
+            justify-content: center;
+            width: 100%;
+            .item-desc {
+              height: 32rem;
+              p {
+              }
+              .services-support {
+              }
+              .mobile-item {
+                width: 100%;
+                margin-top: 2rem;
+                .mobile-friendly {
+                  p {
+                  }
+                  i {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
   // formulaire contact
 
   .login-box {

@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useForm } from "react-hook-form";
 import * as emailjs from "emailjs-com";
+import AnimationScroll from "../Custom/scrollReveal";
 
 export default function ContactForm() {
   const { register, handleSubmit, errors } = useForm();
+
+  useEffect(() => {
+    AnimationScroll();
+  }, []);
 
   const onSubmit = (data, e) => {
     e.preventDefault();
@@ -38,7 +43,7 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="login-box">
+    <div className="login-box slide-up load-hidden">
       <h6>Contactez nous:</h6>
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className="solo-input">

@@ -24,7 +24,7 @@ function Services() {
             nous vous recontacterons dans les plus bref délais.
           </p>
 
-          <div className="services-items slide-left-interval">
+          <div className="services-items slide-left-interval load-hidden">
             <div className="services-item-title bg-title-1">
               <div className="services-icon">
                 <i class="fas fa-glass-martini-alt"></i>
@@ -55,7 +55,7 @@ function Services() {
               </div>
             </div>
           </div>
-          <div className="services-items slide-right-interval">
+          <div className="services-items slide-right-interval load-hidden">
             <div className="services-item-title bg-title-2">
               <div className="services-icon">
                 <i class="fas fa-store"></i>
@@ -86,7 +86,7 @@ function Services() {
               </div>
             </div>
           </div>
-          <div className="services-items slide-left-interval">
+          <div className="services-items slide-left-interval load-hidden">
             <div className="services-item-title bg-title-3">
               <div className="services-icon">
                 <i class="fas fa-drafting-compass"></i>
@@ -118,7 +118,7 @@ function Services() {
               </div>
             </div>
           </div>
-          <div className="services-items slide-right-interval">
+          <div className="services-items slide-right-interval load-hidden">
             <div className="services-item-title bg-title-4">
               <div className="services-icon">
                 <i class="fas fa-paper-plane"></i>

@@ -81,6 +81,40 @@
     }
   }
 
+  // page route services cards =>
+  .services-container {
+    .services-header {
+      .services-presentation {
+        .services-items {
+          width: 72rem;
+          height: 40rem;
+          .services-item-title {
+            width: 36rem;
+            .services-icon {
+              left: 31.5rem;
+              width: 9rem;
+              height: 9rem;
+            }
+            .services-title {
+              p {
+                width: 80%;
+                padding: 6px;
+              }
+            }
+          }
+          .services-item-desc {
+            .item-desc {
+              width: 28rem;
+              .mobile-item {
+                width: 40rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
   // formulaire contact
 
   .login-box {

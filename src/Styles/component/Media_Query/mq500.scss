@@ -81,6 +81,65 @@
     }
   }
 
+  // page route services cards =>
+  .services-container {
+    .services-header {
+      .services-presentation {
+        width: 84%;
+        h5 {
+          font-size: 2.2rem;
+        }
+        p {
+          font-size: 1.2rem;
+          span {
+            font-size: 1.4rem;
+          }
+        }
+        .services-items {
+          width: 26rem;
+          height: 100%;
+
+          .services-item-title {
+            height: 28rem;
+            .services-icon {
+              top: 24rem;
+              width: 8rem;
+              height: 8rem;
+            }
+            .services-title {
+              h6 {
+                font-size: 2rem;
+              }
+              p {
+                font-size: 1.4rem;
+              }
+            }
+          }
+          .services-item-desc {
+            .item-desc {
+              width: 80%;
+              height: 100%;
+              margin: 3rem 0;
+              p {
+                font-size: 1.2rem;
+              }
+              .mobile-item {
+                .mobile-friendly {
+                  p {
+                    font-size: 1rem;
+                  }
+                  i {
+                    font-size: 3.2rem;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
   // formulaire contact
 
   .login-box {
