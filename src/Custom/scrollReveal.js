@@ -1,5 +1,7 @@
 import ScrollReveal from "scrollreveal";
 
+// ne pas oublier la class load-hidden
+
 export default function AnimationScroll() {
   ScrollReveal({
     duration: 1500,
