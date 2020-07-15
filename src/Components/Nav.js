@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink, withRouter } from "react-router-dom";
 
 import Menu from "../Containers/Menu";
 
@@ -33,9 +34,11 @@ const Nav = () => {
         <Menu />
       </div>
       <nav>
-        <div className="title">
-          <img src="./images/CHETZ.svg" alt="THE_CHETZ_WEB" />
-        </div>
+        <NavLink exact to="/">
+          <div className="title">
+            <img src="./images/CHETZ.svg" alt="THE_CHETZ_WEB" />
+          </div>
+        </NavLink>
         <div className="grid">
           <Menu />
           <i onClick={openNav} id="menuBtn" className="fas fa-bars"></i>
@@ -45,4 +48,4 @@ const Nav = () => {
   );
 };
 
-export default Nav;
+export default withRouter(Nav);
