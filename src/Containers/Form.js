@@ -49,40 +49,44 @@ export default function ContactForm() {
         <div className="solo-input">
           <div className="user-box">
             <input
+              id="sujet"
               placeholder=" "
               defaultValue={intialValues.sujet}
               name="sujet"
               ref={register({ required: true, maxLength: 70 })}
             />
             {errors.sujet && <p>Veuillez remplir ce champ</p>}
-            <label>Sujet:</label>
+            <label for="sujet">Sujet:</label>
           </div>
         </div>
         <div className="duo-input">
           <div className="user-box">
             <input
+              id="nom"
               placeholder=" "
               defaultValue={intialValues.nom}
               name="nom"
               ref={register({ required: true })}
             />
             {errors.nom && <p>Veuillez remplir ce champ</p>}
-            <label>Nom:</label>
+            <label for="nom">Nom:</label>
           </div>
           <div className="user-box">
             <input
+              id="prenom"
               placeholder=" "
               defaultValue={intialValues.prenom}
               name="prenom"
               ref={register({ required: true })}
             />
             {errors.prenom && <p>Veuillez remplir ce champ</p>}
-            <label>Prénom:</label>
+            <label for="prenom">Prénom:</label>
           </div>
         </div>
         <div className="duo-input">
           <div className="user-box">
             <input
+              id="email"
               placeholder=" "
               defaultValue={intialValues.email}
               name="email"
@@ -99,10 +103,11 @@ export default function ContactForm() {
             {errors.email && errors.email.type === "pattern" && (
               <p>Veuillez entrer une adresse email valide</p>
             )}
-            <label>email:</label>
+            <label for="email">email:</label>
           </div>
           <div className="user-box">
             <input
+              id="telephone"
               placeholder=" "
               defaultValue={intialValues.telephone}
               name="telephone"
@@ -114,12 +119,13 @@ export default function ContactForm() {
             {errors.telephone && errors.telephone.type === "maxLength" && (
               <p>Max 17 caractères</p>
             )}
-            <label>Téléphone:</label>
+            <label for="telephone">Téléphone:</label>
           </div>
         </div>
         <div className="solo-input">
           <div className="user-box">
             <input
+              id="societe"
               placeholder=" "
               defaultValue={intialValues.societe}
               name="societe"
@@ -128,13 +134,14 @@ export default function ContactForm() {
             {errors.societe && errors.societe.type === "maxLength" && (
               <p>Max 35 caractères</p>
             )}
-            <label>Societe:</label>
+            <label for="societe">Societe:</label>
           </div>
         </div>
         <div className="message-input textBox">
           <div className="use-box">
-            <label>Message:</label>
+            <label for="message">Message:</label>
             <textarea
+              id="message"
               defaultValue={intialValues.message}
               name="message"
               ref={register({ required: true, minLength: 20 })}
