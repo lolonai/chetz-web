@@ -1,6 +1,5 @@
 // page route services cards =>
 .services-container {
-  position: absolute;
   top: 10rem;
   overflow: hidden;
   display: flex;
@@ -191,15 +190,13 @@
   background: url("/images/bg-web-spider.jpg") no-repeat center fixed;
   -webkit-background-size: cover;
   background-size: cover;
-  height: 72rem;
+  height: 80rem;
   width: 100vw;
   max-width: 100%;
   .services-cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1rem 14rem;
-    margin: -6rem 0;
-    height: 0;
     a {
       cursor: pointer;
     }

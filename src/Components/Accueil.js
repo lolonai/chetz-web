@@ -5,10 +5,6 @@ import ContactForm from "../Containers/Form";
 
 import AnimationScroll from "../Custom/scrollReveal";
 
-// window.addEventListener("load", function (event) {
-//   AnimationScroll();
-// });
-
 function Accueil() {
   useEffect(() => {
     AnimationScroll();
