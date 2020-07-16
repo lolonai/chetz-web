@@ -1,7 +1,7 @@
 nav {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
   width: 100%;
   height: 10rem;
   background-color: $dark;
@@ -31,7 +31,7 @@ nav {
       display: none;
     }
     .menu {
-      width: 50rem;
+      width: 56rem;
       ul {
         display: flex;
         list-style: none;

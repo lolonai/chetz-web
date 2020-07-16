@@ -28,7 +28,7 @@ export default function Presentation() {
               <p>
                 Laurent, l'imprimeur devenu développeur. <br />
                 Après 15 ans passé dans l'industrie graphique il à tout plaqué
-                pour le développement.
+                pour le web.
                 <br />
                 C'est notre dev front
                 <br />
