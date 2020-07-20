@@ -16,16 +16,14 @@ app.get("/", function (request, response) {
     if (err) {
       return console.log(err);
     }
-    data = data.replace(/\$OG_TITLE/g, "Agence CheTz Web");
-    data = data.replace(
-      /\$OG_DESCRIPTION/g,
-      "Votre Agence web à Nantes et Lyon, votre identité en ligne plus simplement"
-    );
-    result = data.replace(
-      /\$OG_IMAGE/g,
-      "https://zupimages.net/up/20/30/4eps.jpg"
-    );
-    response.send(result);
+    data = data
+      .replace(/\$OG_TITLE/g, "Agence CheTz Web")
+      .replace(
+        /\$OG_DESCRIPTION/g,
+        "Votre Agence web à Nantes et Lyon, votre identité en ligne plus simplement"
+      )
+      .replace(/\$OG_IMAGE/g, "https://zupimages.net/up/20/30/4eps.jpg");
+    response.send(data);
   });
 });
 
@@ -36,16 +34,14 @@ app.get("/team", function (request, response) {
     if (err) {
       return console.log(err);
     }
-    data = data.replace(/\$OG_TITLE/g, "CheTz Notre équipe");
-    data = data.replace(
-      /\$OG_DESCRIPTION/g,
-      "Notre équipe, efficacité, batir vos projets est notre métier."
-    );
-    result = data.replace(
-      /\$OG_IMAGE/g,
-      "https://zupimages.net/up/20/30/qau9.jpg"
-    );
-    response.send(result);
+    data = data
+      .replace(/\$OG_TITLE/g, "CheTz Notre équipe")
+      .replace(
+        /\$OG_DESCRIPTION/g,
+        "Notre équipe, efficacité, batir vos projets est notre métier."
+      )
+      .replace(/\$OG_IMAGE/g, "https://zupimages.net/up/20/30/qau9.jpg");
+    response.send(data);
   });
 });
 
@@ -56,16 +52,14 @@ app.get("/services", function (request, response) {
     if (err) {
       return console.log(err);
     }
-    data = data.replace(/\$OG_TITLE/g, "CheTz prestation");
-    data = data.replace(
-      /\$OG_DESCRIPTION/g,
-      "Quelque soit votre projet, nous pouvons toujours le réaliser, Web ? Impression notre équipe dynamique se charge de tout."
-    );
-    result = data.replace(
-      /\$OG_IMAGE/g,
-      "https://zupimages.net/up/20/30/by9e.jpg"
-    );
-    response.send(result);
+    data = data
+      .replace(/\$OG_TITLE/g, "CheTz prestation")
+      .replace(
+        /\$OG_DESCRIPTION/g,
+        "Quelque soit votre projet, nous pouvons toujours le réaliser, Web ? Impression notre équipe dynamique se charge de tout."
+      )
+      .replace(/\$OG_IMAGE/g, "https://zupimages.net/up/20/30/by9e.jpg");
+    response.send(data);
   });
 });
 
@@ -76,16 +70,14 @@ app.get("/contact", function (request, response) {
     if (err) {
       return console.log(err);
     }
-    data = data.replace(/\$OG_TITLE/g, "CheTz contact");
-    data = data.replace(
-      /\$OG_DESCRIPTION/g,
-      "Formulaire de contact CheTz-Web, parlez nous de votre projet."
-    );
-    result = data.replace(
-      /\$OG_IMAGE/g,
-      "https://zupimages.net/up/20/30/wzhp.jpg"
-    );
-    response.send(result);
+    data = data
+      .replace(/\$OG_TITLE/g, "CheTz contact")
+      .replace(
+        /\$OG_DESCRIPTION/g,
+        "Formulaire de contact CheTz-Web, parlez nous de votre projet."
+      )
+      .replace(/\$OG_IMAGE/g, "https://zupimages.net/up/20/30/wzhp.jpg");
+    response.send(data);
   });
 });
 app.use(express.static(path.resolve(__dirname, "./build")));
