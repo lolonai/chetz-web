@@ -16,7 +16,7 @@ app.get("/", function (request, response) {
     if (err) {
       return console.log(err);
     }
-    data = data.replace(/\$OG_TITLE/g, "CheTz Web Agence");
+    data = data.replace(/\$OG_TITLE/g, "AgenceCheTz Web");
     data = data.replace(
       /\$OG_DESCRIPTION/g,
       "Votre Agence web à Nantes et Lyon, votre identité en ligne plus simplement"
@@ -26,14 +26,14 @@ app.get("/", function (request, response) {
   });
 });
 
-app.get("/pr&eacutesentation", function (request, response) {
+app.get("/pr&eacutestation", function (request, response) {
   console.log("Presentation page visited!");
   const filePath = path.resolve(__dirname, "./build", "index.html");
   fs.readFile(filePath, "utf8", function (err, data) {
     if (err) {
       return console.log(err);
     }
-    data = data.replace(/\$OG_TITLE/g, "CheTz-Web Notre équipe");
+    data = data.replace(/\$OG_TITLE/g, "CheTz Notre équipe");
     data = data.replace(
       /\$OG_DESCRIPTION/g,
       "Notre équipe, efficacité, batir vos projets est notre métier."
@@ -50,7 +50,7 @@ app.get("/services", function (request, response) {
     if (err) {
       return console.log(err);
     }
-    data = data.replace(/\$OG_TITLE/g, "CheTz-Web prestation");
+    data = data.replace(/\$OG_TITLE/g, "CheTz prestation");
     data = data.replace(
       /\$OG_DESCRIPTION/g,
       "Quelque soit votre projet, nous pouvons toujours le réaliser, Web ? Impression notre équipe dynamique se charge de tout."
@@ -67,7 +67,7 @@ app.get("/contact", function (request, response) {
     if (err) {
       return console.log(err);
     }
-    data = data.replace(/\$OG_TITLE/g, "CheTz-Web contact");
+    data = data.replace(/\$OG_TITLE/g, "CheTz contact");
     data = data.replace(
       /\$OG_DESCRIPTION/g,
       "Formulaire de contact CheTz-Web, parlez nous de votre projet."
