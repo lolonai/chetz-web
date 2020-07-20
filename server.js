@@ -1,21 +1,23 @@
-// le new
+// newwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww
 
 const express = require("express");
-const app = express();
-const port = process.env.PORT || 5000;
 const path = require("path");
 const fs = require("fs");
 const favicon = require("express-favicon");
 
+const PORT = process.env.PORT || 5000;
+
+const app = express();
+
 app.use(favicon(__dirname + "/build/favicon.ico"));
 
-app.get("/", function (request, response) {
-  console.log("Home page visited!");
+app.get("/", (req, res) => {
   const filePath = path.resolve(__dirname, "./build", "index.html");
-  fs.readFile(filePath, "utf8", function (err, data) {
+  fs.readFile(filePath, "utf8", (err, data) => {
     if (err) {
       return console.log(err);
     }
+
     data = data
       .replace(/\$OG_TITLE/g, "Agence CheTz Web")
       .replace(
@@ -23,17 +25,18 @@ app.get("/", function (request, response) {
         "Votre Agence web à Nantes et Lyon, votre identité en ligne plus simplement"
       )
       .replace(/\$OG_IMAGE/g, "https://zupimages.net/up/20/30/4eps.jpg");
-    response.send(data);
+
+    res.send(data);
   });
 });
 
-app.get("/team", function (request, response) {
-  console.log("Presentation page visited!");
+app.get("/team", (req, res) => {
   const filePath = path.resolve(__dirname, "./build", "index.html");
-  fs.readFile(filePath, "utf8", function (err, data) {
+  fs.readFile(filePath, "utf8", (err, data) => {
     if (err) {
       return console.log(err);
     }
+
     data = data
       .replace(/\$OG_TITLE/g, "CheTz Notre équipe")
       .replace(
@@ -41,17 +44,18 @@ app.get("/team", function (request, response) {
         "Notre équipe, efficacité, batir vos projets est notre métier."
       )
       .replace(/\$OG_IMAGE/g, "https://zupimages.net/up/20/30/qau9.jpg");
-    response.send(data);
+
+    res.send(data);
   });
 });
 
-app.get("/services", function (request, response) {
-  console.log("Services page visited!");
+app.get("/services", (req, res) => {
   const filePath = path.resolve(__dirname, "./build", "index.html");
-  fs.readFile(filePath, "utf8", function (err, data) {
+  fs.readFile(filePath, "utf8", (err, data) => {
     if (err) {
       return console.log(err);
     }
+
     data = data
       .replace(/\$OG_TITLE/g, "CheTz prestation")
       .replace(
@@ -59,17 +63,18 @@ app.get("/services", function (request, response) {
         "Quelque soit votre projet, nous pouvons toujours le réaliser, Web ? Impression notre équipe dynamique se charge de tout."
       )
       .replace(/\$OG_IMAGE/g, "https://zupimages.net/up/20/30/by9e.jpg");
-    response.send(data);
+
+    res.send(data);
   });
 });
 
-app.get("/contact", function (request, response) {
-  console.log("Contact page visited!");
+app.get("/contact", (req, res) => {
   const filePath = path.resolve(__dirname, "./build", "index.html");
-  fs.readFile(filePath, "utf8", function (err, data) {
+  fs.readFile(filePath, "utf8", (err, data) => {
     if (err) {
       return console.log(err);
     }
+
     data = data
       .replace(/\$OG_TITLE/g, "CheTz contact")
       .replace(
@@ -77,14 +82,13 @@ app.get("/contact", function (request, response) {
         "Formulaire de contact CheTz-Web, parlez nous de votre projet."
       )
       .replace(/\$OG_IMAGE/g, "https://zupimages.net/up/20/30/wzhp.jpg");
-    response.send(data);
+
+    res.send(data);
   });
 });
+
 app.use(express.static(path.resolve(__dirname, "./build")));
 
-app.get("*", function (request, response) {
-  const filePath = path.resolve(__dirname, "./build", "index.html");
-  response.sendFile(filePath);
+app.listen(PORT, () => {
+  console.log(`Server is listening on port ${PORT}`);
 });
-
-app.listen(port, () => console.log(`Listening on port ${port}`));
