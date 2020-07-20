@@ -16,7 +16,7 @@ app.get("/", function (request, response) {
     if (err) {
       return console.log(err);
     }
-    data = data.replace(/\$OG_TITLE/g, "AgenceCheTz Web");
+    data = data.replace(/\$OG_TITLE/g, "Agence CheTz Web");
     data = data.replace(
       /\$OG_DESCRIPTION/g,
       "Votre Agence web à Nantes et Lyon, votre identité en ligne plus simplement"
@@ -26,7 +26,7 @@ app.get("/", function (request, response) {
   });
 });
 
-app.get("/pr&eacutestation", function (request, response) {
+app.get("/team", function (request, response) {
   console.log("Presentation page visited!");
   const filePath = path.resolve(__dirname, "./build", "index.html");
   fs.readFile(filePath, "utf8", function (err, data) {
