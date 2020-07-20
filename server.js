@@ -22,7 +22,7 @@ app.get("/", (req, res) => {
       .replace(/__TITLE__/g, "CheTz Web bienvenue")
       .replace(
         /__DESCRIPTION__/g,
-        "Votre Agence web à Nantes et Lyon, votre identité en ligne plus simplement"
+        "Agence web à Nantes et Lyon, votre identité en ligne plus simplement"
       )
       .replace(/__IMAGE__/g, __dirname + "/build/image/image-accueil.JPG");
 
@@ -30,7 +30,7 @@ app.get("/", (req, res) => {
   });
 });
 
-app.get("/présentation", (req, res) => {
+app.get("/pr&eacutesentation", (req, res) => {
   const filePath = path.resolve(__dirname, "./build", "index.html");
   fs.readFile(filePath, "utf8", (err, data) => {
     if (err) {
