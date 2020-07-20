@@ -30,7 +30,7 @@ app.get("/", (req, res) => {
   });
 });
 
-app.get("/présentation", (req, res) => {
+app.get("/pr&eacutesentation", (req, res) => {
   const filePath = path.resolve(__dirname, "./build", "index.html");
   fs.readFile(filePath, "utf8", (err, data) => {
     if (err) {
