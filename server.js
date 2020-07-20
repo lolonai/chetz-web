@@ -21,7 +21,10 @@ app.get("/", function (request, response) {
       /\$OG_DESCRIPTION/g,
       "Votre Agence web à Nantes et Lyon, votre identité en ligne plus simplement"
     );
-    result = data.replace(/\$OG_IMAGE/g, "/public/images/image-accueil.JPG");
+    result = data.replace(
+      /\$OG_IMAGE/g,
+      "https://zupimages.net/up/20/30/4eps.jpg"
+    );
     response.send(result);
   });
 });
@@ -38,7 +41,10 @@ app.get("/team", function (request, response) {
       /\$OG_DESCRIPTION/g,
       "Notre équipe, efficacité, batir vos projets est notre métier."
     );
-    result = data.replace(/\$OG_IMAGE/g, "/public/images/image-equipe.JPG");
+    result = data.replace(
+      /\$OG_IMAGE/g,
+      "https://zupimages.net/up/20/30/qau9.jpg"
+    );
     response.send(result);
   });
 });
@@ -55,7 +61,10 @@ app.get("/services", function (request, response) {
       /\$OG_DESCRIPTION/g,
       "Quelque soit votre projet, nous pouvons toujours le réaliser, Web ? Impression notre équipe dynamique se charge de tout."
     );
-    result = data.replace(/\$OG_IMAGE/g, "/public/images/image-services.JPG");
+    result = data.replace(
+      /\$OG_IMAGE/g,
+      "https://zupimages.net/up/20/30/by9e.jpg"
+    );
     response.send(result);
   });
 });
@@ -72,7 +81,10 @@ app.get("/contact", function (request, response) {
       /\$OG_DESCRIPTION/g,
       "Formulaire de contact CheTz-Web, parlez nous de votre projet."
     );
-    result = data.replace(/\$OG_IMAGE/g, "/public/images/image-contact.JPG");
+    result = data.replace(
+      /\$OG_IMAGE/g,
+      "https://zupimages.net/up/20/30/wzhp.jpg"
+    );
     response.send(result);
   });
 });
