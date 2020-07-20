@@ -23,7 +23,7 @@ function Menu() {
             onClick={closeNav}
             exact
             activeClassName="selected"
-            to="/présentation"
+            to="/team"
           >
             Présentation
           </NavLink>
