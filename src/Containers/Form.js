@@ -56,7 +56,7 @@ export default function ContactForm() {
               ref={register({ required: true, maxLength: 70 })}
             />
             {errors.sujet && <p>Veuillez remplir ce champ</p>}
-            <label for="sujet">Sujet:</label>
+            <label htmlFor="sujet">Sujet:</label>
           </div>
         </div>
         <div className="duo-input">
@@ -69,7 +69,7 @@ export default function ContactForm() {
               ref={register({ required: true })}
             />
             {errors.nom && <p>Veuillez remplir ce champ</p>}
-            <label for="nom">Nom:</label>
+            <label htmlFor="nom">Nom:</label>
           </div>
           <div className="user-box">
             <input
@@ -80,7 +80,7 @@ export default function ContactForm() {
               ref={register({ required: true })}
             />
             {errors.prenom && <p>Veuillez remplir ce champ</p>}
-            <label for="prenom">Prénom:</label>
+            <label htmlFor="prenom">Prénom:</label>
           </div>
         </div>
         <div className="duo-input">
@@ -103,7 +103,7 @@ export default function ContactForm() {
             {errors.email && errors.email.type === "pattern" && (
               <p>Veuillez entrer une adresse email valide</p>
             )}
-            <label for="email">email:</label>
+            <label htmlFor="email">email:</label>
           </div>
           <div className="user-box">
             <input
@@ -119,7 +119,7 @@ export default function ContactForm() {
             {errors.telephone && errors.telephone.type === "maxLength" && (
               <p>Max 17 caractères</p>
             )}
-            <label for="telephone">Téléphone:</label>
+            <label htmlFor="telephone">Téléphone:</label>
           </div>
         </div>
         <div className="solo-input">
@@ -134,12 +134,12 @@ export default function ContactForm() {
             {errors.societe && errors.societe.type === "maxLength" && (
               <p>Max 35 caractères</p>
             )}
-            <label for="societe">Societe:</label>
+            <label htmlFor="societe">Societe:</label>
           </div>
         </div>
         <div className="message-input textBox">
           <div className="use-box">
-            <label for="message">Message:</label>
+            <label htmlFor="message">Message:</label>
             <textarea
               id="message"
               defaultValue={intialValues.message}

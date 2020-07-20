@@ -1,94 +1,86 @@
-const express = require("express");
-const favicon = require("express-favicon");
+// le new
 
+const express = require("express");
+const app = express();
+const port = process.env.PORT || 5000;
 const path = require("path");
 const fs = require("fs");
-
-const PORT = process.env.PORT || 5000;
-
-const app = express();
+const favicon = require("express-favicon");
 
 app.use(favicon(__dirname + "/build/favicon.ico"));
-app.use(express.static(__dirname));
-app.use(express.static(path.join(__dirname, "build")));
-app.get("/", (req, res) => {
+
+app.get("/", function (request, response) {
+  console.log("Home page visited!");
   const filePath = path.resolve(__dirname, "./build", "index.html");
-  fs.readFile(filePath, "utf8", (err, data) => {
+  fs.readFile(filePath, "utf8", function (err, data) {
     if (err) {
       return console.log(err);
     }
-
-    data = data
-      .replace(/__TITLE__/g, "CheTz Web bienvenue")
-      .replace(
-        /__DESCRIPTION__/g,
-        "Votre Agence web à Nantes et Lyon, votre identité en ligne plus simplement"
-      )
-      .replace(/__IMAGE__/g, __dirname + "/build/image/image-accueil.JPG");
-
-    res.send(data);
+    data = data.replace(/\$OG_TITLE/g, "CheTz Web Agence");
+    data = data.replace(
+      /\$OG_DESCRIPTION/g,
+      "Votre Agence web à Nantes et Lyon, votre identité en ligne plus simplement"
+    );
+    result = data.replace(/\$OG_IMAGE/g, "/public/images/image-accueil.JPG");
+    response.send(result);
   });
 });
 
-app.get("/pr&eacutesentation", (req, res) => {
+app.get("/pr&eacutesentation", function (request, response) {
+  console.log("Presentation page visited!");
   const filePath = path.resolve(__dirname, "./build", "index.html");
-  fs.readFile(filePath, "utf8", (err, data) => {
+  fs.readFile(filePath, "utf8", function (err, data) {
     if (err) {
       return console.log(err);
     }
-
-    data = data
-      .replace(/__TITLE__/g, "CheTz-Web Notre équipe")
-      .replace(
-        /__DESCRIPTION__/g,
-        "Notre équipe, efficacité, batir vos projets est notre métier."
-      )
-      .replace(/__IMAGE__/g, __dirname + "/build/image/image-equipe.JPG");
-
-    res.send(data);
+    data = data.replace(/\$OG_TITLE/g, "CheTz-Web Notre équipe");
+    data = data.replace(
+      /\$OG_DESCRIPTION/g,
+      "Notre équipe, efficacité, batir vos projets est notre métier."
+    );
+    result = data.replace(/\$OG_IMAGE/g, "/public/images/image-equipe.JPG");
+    response.send(result);
   });
 });
 
-app.get("/services", (req, res) => {
+app.get("/services", function (request, response) {
+  console.log("Services page visited!");
   const filePath = path.resolve(__dirname, "./build", "index.html");
-  fs.readFile(filePath, "utf8", (err, data) => {
+  fs.readFile(filePath, "utf8", function (err, data) {
     if (err) {
       return console.log(err);
     }
-
-    data = data
-      .replace(/__TITLE__/g, "CheTz-Web prestation")
-      .replace(
-        /__DESCRIPTION__/g,
-        "Quelque soit votre projet, nous pouvons toujours le réaliser, Web ? Impression notre équipe dynamique se charge de tout."
-      )
-      .replace(/__IMAGE__/g, __dirname + "/build/image/image-services.JPG");
-
-    res.send(data);
+    data = data.replace(/\$OG_TITLE/g, "CheTz-Web prestation");
+    data = data.replace(
+      /\$OG_DESCRIPTION/g,
+      "Quelque soit votre projet, nous pouvons toujours le réaliser, Web ? Impression notre équipe dynamique se charge de tout."
+    );
+    result = data.replace(/\$OG_IMAGE/g, "/public/images/image-services.JPG");
+    response.send(result);
   });
 });
 
-app.get("/services", (req, res) => {
+app.get("/contact", function (request, response) {
+  console.log("Contact page visited!");
   const filePath = path.resolve(__dirname, "./build", "index.html");
-  fs.readFile(filePath, "utf8", (err, data) => {
+  fs.readFile(filePath, "utf8", function (err, data) {
     if (err) {
       return console.log(err);
     }
-
-    data = data
-      .replace(/__TITLE__/g, "CheTz-Web contact")
-      .replace(
-        /__DESCRIPTION__/g,
-        "Formulaire de contact CheTz-Web, parlez nous de votre projet."
-      )
-      .replace(/__IMAGE__/g, __dirname + "/build/image/image-contact.JPG");
-
-    res.send(data);
+    data = data.replace(/\$OG_TITLE/g, "CheTz-Web contact");
+    data = data.replace(
+      /\$OG_DESCRIPTION/g,
+      "Formulaire de contact CheTz-Web, parlez nous de votre projet."
+    );
+    result = data.replace(/\$OG_IMAGE/g, "/public/images/image-contact.JPG");
+    response.send(result);
   });
 });
-
 app.use(express.static(path.resolve(__dirname, "./build")));
 
-app.listen(PORT, () => {
-  console.log(`Server is listening on port ${PORT}`);
+app.get("*", function (request, response) {
+  const filePath = path.resolve(__dirname, "./build", "index.html");
+  response.sendFile(filePath);
 });
+
+app.listen(port, () => console.log(`Listening on port ${port}`));
