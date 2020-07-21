@@ -39,7 +39,7 @@ app.get("/team", (req, res) => {
       .replace(/\$OG_TITLE/g, "CheTz-Web Notre équipe")
       .replace(
         /\$OG_DESCRIPTION/g,
-        "Notre équipe, efficacité, batir vos projets est notre métier."
+        "Notre équipe, efficacité, bâtir vos projets est notre métier."
       )
       .replace(/\$OG_IMAGE/g, "https://zupimages.net/up/20/30/qau9.jpg");
 
