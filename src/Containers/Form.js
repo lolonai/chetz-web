@@ -16,7 +16,6 @@ export default function ContactForm() {
     alert(`Message envoyé, nous vous recontacterons au plus vite`);
     let templateParams = {
       expediteur: data.email,
-      to_name: process.env.REACT_APP_DESTINATAIRE,
       prenom: data.prenom,
       nom: data.nom,
       sujet: data.sujet,
