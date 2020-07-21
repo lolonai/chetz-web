@@ -26,7 +26,7 @@ export default function Presentation() {
             </div>
             <div className="team-content">
               <p>
-                Laurent,Imprimeur reconverti développeur. <br />
+                Laurent, imprimeur reconverti développeur. <br />
                 Après 15 ans passé dans l'industrie graphique il a tout plaqué
                 pour le web.
                 <br />
