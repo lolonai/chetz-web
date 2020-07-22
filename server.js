@@ -17,10 +17,10 @@ app.get("/", (req, res) => {
     }
 
     data = data
-      .replace(/\$OG_TITLE/g, "CheTz Web bienvenue")
+      .replace(/\$OG_TITLE/g, "Agence web! CheTz Web")
       .replace(
         /\$OG_DESCRIPTION/g,
-        "Agence web à Nantes et Lyon, votre identité en ligne plus simplement"
+        "Agence web à Nantes et Lyon, votre identité en ligne plus simplement, création, refonte, impression"
       )
       .replace(/\$OG_IMAGE/g, "https://zupimages.net/up/20/30/4eps.jpg");
 
@@ -36,10 +36,10 @@ app.get("/team", (req, res) => {
     }
 
     data = data
-      .replace(/\$OG_TITLE/g, "CheTz-Web Notre équipe")
+      .replace(/\$OG_TITLE/g, "Notre CheTz équipe")
       .replace(
         /\$OG_DESCRIPTION/g,
-        "Notre équipe, efficacité, bâtir vos projets est notre métier."
+        "Bâtir vos projets est notre métier. Basé à Nantes et à Lyon nous nous déplaçons dans toute la france."
       )
       .replace(/\$OG_IMAGE/g, "https://zupimages.net/up/20/30/qau9.jpg");
 
@@ -55,10 +55,10 @@ app.get("/services", (req, res) => {
     }
 
     data = data
-      .replace(/\$OG_TITLE/g, "CheTz-Web prestation")
+      .replace(/\$OG_TITLE/g, "Nos CheTz prestation")
       .replace(
         /\$OG_DESCRIPTION/g,
-        "Quelque soit votre projet, nous pouvons toujours le réaliser, Web ? Impression notre équipe dynamique se charge de tout."
+        "Quelque soit votre projet, nous pouvons toujours le réaliser, Web ou Impression notre équipe dynamique se charge de tout."
       )
       .replace(/\$OG_IMAGE/g, "https://zupimages.net/up/20/30/by9e.jpg");
 
@@ -77,7 +77,7 @@ app.get("/contact", (req, res) => {
       .replace(/\$OG_TITLE/g, "CheTz-Web contact")
       .replace(
         /\$OG_DESCRIPTION/g,
-        "Formulaire de contact CheTz-Web, parlez nous de votre projet."
+        "Parlez nous de votre projet, laissez parler votre imagination."
       )
       .replace(/\$OG_IMAGE/g, "https://zupimages.net/up/20/30/wzhp.jpg");
 
